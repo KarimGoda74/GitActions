@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       
-	    - name: "Login to Docker hub"
+      - name: "Login to Docker hub"
         run: docker login --username Karimgoda74 --password dckr_pat_pvLmVKue7fJxIGgkAMx6LZWLY70
 
       - name: "Building docker image"
