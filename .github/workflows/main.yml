@@ -14,12 +14,13 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-                          
-      - name: "Login to Docker hub"
+      
+	    - name: "Login to Docker hub"
         run: docker login --username karimgoda74 --password kgfci64215301##
 
       - name: "Building docker image"
-        run: docker build -t Karimgoda74/myimage .
+        run: docker build -t karimgoda74/myimage .
 
       - name: "Pushing to Docker hub"
-        run: docker push Karimgoda74/myimage
+        run: docker push karimgoda74/myimage
+        
